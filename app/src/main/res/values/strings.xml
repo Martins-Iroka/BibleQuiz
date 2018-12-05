@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">BibleQuiz</string>
+    <string name="first_question">The name of God is Jehovah.</string>
+    <string name="second_question">Jesus Christ had 12 disciples.</string>
+    <string name="third_question">Solomon served Jehovah till death.</string>
+    <string name="fourth_question">Noah built the art for 40 years.</string>
+    <string name="fifth_question">Abner was killed by Joab.</string>
+    <string name="sixth_question">Joseph had 3 sons.</string>
+    <string name="true_button">True</string>
+    <string name="false_button">False</string>
+    <string name="cheat_button">Cheat</string>
+    <string name="next_button">Next</string>
+    <string name="correct_toast">Correct</string>
+    <string name="incorrect_toast">Incorrect</string>
+    <string name="score">Score: %1$d percent</string>
+    <string name="warning_message">This won\'t be counted as a correct answer.</string>
+    <string name="cheat_message">Cheating is wrong.</string>
+    <string name="cheats_left">Cheat left: %1$d</string>
+    <string name="cheat_limit">Cheat limit reached.</string>
+    <string name="show_button">Show Answer</string>
+    <string name="quit_title">Quit!</string>
+    <string name="quit_message">Are you sure?</string>
+    <string name="yes_dialog">Yes</string>
+    <string name="no_dialog">No</string>
+    <string name="save_score">Save Score?</string>
+    <string name="restart_dialog">Restart</string>
+    <string name="score_board">Save Score</string>
+    <string name="name_hint">Name</string>
+    <string name="save_button">Save</string>
+    <string name="view_button">View</string>
+    <string name="data_saved_toast">Score Saved</string>
+    <string name="score_board_dialog">Score Board</string>
+    <string name="play_again_button">Play Again</string>
+    <string name="score_hint">Score</string>
+    <string name="score_display">%1$d percent</string>
+</resources>
