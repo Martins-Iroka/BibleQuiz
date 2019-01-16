@@ -164,7 +164,6 @@ public class BibleQuizActivity extends AppCompatActivity {
         if (mQuestionBank.length == mCorrect + mIncorrect + mCheatCount) {
             mTrueButton.setEnabled(false);
             mFalseButton.setEnabled(false);
-            cheatButtonState();
             mNextButton.setEnabled(false);
             saveScoreDialog();
         }
@@ -203,7 +202,6 @@ public class BibleQuizActivity extends AppCompatActivity {
                 int percent_score = (mCorrect * 100) / mQuestionBank.length;
                 Intent intent = ScoreTable.getScore(BibleQuizActivity.this, percent_score);
                 startActivity(intent);
-                finish();
             }
         });
 

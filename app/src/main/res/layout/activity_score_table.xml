@@ -25,13 +25,11 @@
         android:textSize="20sp"
         android:textColor="#000"/>
 
-    <EditText
+    <TextView
         android:id="@+id/score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:hint="@string/score_hint"
-        android:inputType="number"
         android:padding="24dp"
         android:textSize="20sp"
         android:textColor="#000"/>

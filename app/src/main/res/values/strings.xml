@@ -32,5 +32,4 @@
     <string name="score_board_dialog">Score Board</string>
     <string name="play_again_button">Play Again</string>
     <string name="score_hint">Score</string>
-    <string name="score_display">%1$d percent</string>
 </resources>
