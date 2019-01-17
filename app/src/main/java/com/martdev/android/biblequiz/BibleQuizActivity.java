@@ -200,8 +200,9 @@ public class BibleQuizActivity extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 int percent_score = (mCorrect * 100) / mQuestionBank.length;
-                Intent intent = ScoreTable.getScore(BibleQuizActivity.this, percent_score);
+                Intent intent = ScoreDetail.getScore(BibleQuizActivity.this, percent_score);
                 startActivity(intent);
+                finish();
             }
         });
 

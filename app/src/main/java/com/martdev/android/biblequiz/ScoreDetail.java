@@ -16,7 +16,7 @@ import android.widget.Toast;
 
 import com.martdev.android.biblequiz.database.ScoreDbHelper;
 
-public class ScoreTable extends AppCompatActivity {
+public class ScoreDetail extends AppCompatActivity {
     private static final String EXTRA_PERCENT_SCORE = "com.martdev.biblequiz.percent_score";
     private static final String SCORE_DIALOG = "ScoreDialog";
     private EditText mNameText;
@@ -25,7 +25,7 @@ public class ScoreTable extends AppCompatActivity {
     int getScore;
 
     public static Intent getScore(Context packageContext,int percent_score) {
-        Intent intent = new Intent(packageContext, ScoreTable.class);
+        Intent intent = new Intent(packageContext, ScoreDetail.class);
         intent.putExtra(EXTRA_PERCENT_SCORE, percent_score);
         return intent;
     }
@@ -51,6 +51,8 @@ public class ScoreTable extends AppCompatActivity {
         mPlayAgain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(ScoreDetail.this, BibleQuizActivity.class);
+                startActivity(intent);
                 finish();
             }
         });
@@ -70,13 +72,13 @@ public class ScoreTable extends AppCompatActivity {
                     mNameText.setError("Please enter your name");
                 } else {
                     try {
-                        SQLiteDatabase database = new ScoreDbHelper(ScoreTable.this).getWritableDatabase();
+                        SQLiteDatabase database = new ScoreDbHelper(ScoreDetail.this).getWritableDatabase();
                         ScoreDbHelper.insertScore(database, name, playerScore);
-                        Toast.makeText(ScoreTable.this, "Data saved", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ScoreDetail.this, "Data saved", Toast.LENGTH_SHORT).show();
                         mNameText.setEnabled(false);
                         mSaveButton.setEnabled(false);
                     } catch (SQLiteException e) {
-                        Toast.makeText(ScoreTable.this, "Database unavailable", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ScoreDetail.this, "Database unavailable", Toast.LENGTH_SHORT).show();
                     }
                 }
             }
